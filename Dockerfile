@@ -1,5 +1,5 @@
 FROM nikolaik/python-nodejs:python3.10-nodejs17
-RUN apt update && apt upgrade -y
+RUN apt update && apt upgrade -y nodejs
 RUN apt install ffmpeg -y
 COPY . /app
 WORKDIR /app
